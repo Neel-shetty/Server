@@ -1,0 +1,8 @@
+{
+	"sans": [
+		"vault.newfox.pp.ua"
+	],
+	"issuer_data": {
+		"url": "https://acme-v02.api.letsencrypt.org/acme/cert/0474f916102473decc0a7321c95680eccd28"
+	}
+}

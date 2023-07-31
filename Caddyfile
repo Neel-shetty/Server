@@ -1,0 +1,123 @@
+{$DOMAIN}:443 {
+  log {
+    level INFO
+    output file {$LOG_FILE} {
+      roll_size 10MB
+      roll_keep 10
+    }
+  }
+
+  # Use the ACME HTTP-01 challenge to get a cert for the configured domain.
+  tls {$EMAIL}
+
+  # This setting may have compatibility issues with some browsers
+  # (e.g., attachment downloading on Firefox). Try disabling this
+  # if you encounter issues.
+  encode gzip
+
+  # Proxy everything Rocket
+  reverse_proxy vaultwarden:80 {
+       # Send the true remote IP to Rocket, so that vaultwarden can put this in the
+       # log, so that fail2ban can ban the correct IP.
+       header_up X-Real-IP {remote_host}
+  }
+}
+
+https://jellyfin.newfox.pp.ua:443 {
+
+  # Use the ACME HTTP-01 challenge to get a cert for the configured domain.
+  tls {$EMAIL}
+
+  # This setting may have compatibility issues with some browsers
+  # (e.g., attachment downloading on Firefox). Try disabling this
+  # if you encounter issues.
+  encode gzip
+
+  # Proxy everything Rocket
+  reverse_proxy 159.65.159.227:8096 
+}
+
+https://sonarr.newfox.pp.ua:443 {
+
+  # Use the ACME HTTP-01 challenge to get a cert for the configured domain.
+  tls {$EMAIL}
+
+  # This setting may have compatibility issues with some browsers
+  # (e.g., attachment downloading on Firefox). Try disabling this
+  # if you encounter issues.
+  encode gzip
+
+  # Proxy everything Rocket
+  reverse_proxy 159.65.159.227:8989 
+}
+
+
+https://radarr.newfox.pp.ua:443 {
+
+  # Use the ACME HTTP-01 challenge to get a cert for the configured domain.
+  tls {$EMAIL}
+
+  # This setting may have compatibility issues with some browsers
+  # (e.g., attachment downloading on Firefox). Try disabling this
+  # if you encounter issues.
+  encode gzip
+
+  # Proxy everything Rocket
+  reverse_proxy 159.65.159.227:7878
+}
+ 
+https://torrent.newfox.pp.ua:443 {
+
+  # Use the ACME HTTP-01 challenge to get a cert for the configured domain.
+  tls {$EMAIL}
+
+  # This setting may have compatibility issues with some browsers
+  # (e.g., attachment downloading on Firefox). Try disabling this
+  # if you encounter issues.
+  encode gzip
+
+  # Proxy everything Rocket
+  reverse_proxy 159.65.159.227:8080
+}
+
+https://portainer.newfox.pp.ua:443 {
+  # Use the ACME HTTP-01 challenge to get a cert for the configured domain.
+  tls {$EMAIL}
+
+  # This setting may have compatibility issues with some browsers
+  # (e.g., attachment downloading on Firefox). Try disabling this
+  # if you encounter issues.
+  encode gzip
+
+  # Proxy everything Rocket
+  reverse_proxy 159.65.159.227:9443
+	
+}
+
+https://jackett.newfox.pp.ua:443 {
+  # Use the ACME HTTP-01 challenge to get a cert for the configured domain.
+  tls {$EMAIL}
+
+  # This setting may have compatibility issues with some browsers
+  # (e.g., attachment downloading on Firefox). Try disabling this
+  # if you encounter issues.
+  encode gzip
+
+  # Proxy everything Rocket
+  reverse_proxy 159.65.159.227:9117
+	
+}
+
+https://git.newfox.pp.ua:443 {
+  # Use the ACME HTTP-01 challenge to get a cert for the configured domain.
+  tls {$EMAIL}
+
+  # This setting may have compatibility issues with some browsers
+  # (e.g., attachment downloading on Firefox). Try disabling this
+  # if you encounter issues.
+  encode gzip
+
+  # Proxy everything Rocket
+  reverse_proxy 159.65.159.227:3000
+	
+}

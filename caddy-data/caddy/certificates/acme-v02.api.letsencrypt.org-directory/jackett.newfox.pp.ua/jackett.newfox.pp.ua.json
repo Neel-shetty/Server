@@ -1,0 +1,8 @@
+{
+	"sans": [
+		"jackett.newfox.pp.ua"
+	],
+	"issuer_data": {
+		"url": "https://acme-v02.api.letsencrypt.org/acme/cert/032cee8852bdebd0339b5840c51cf273ac29"
+	}
+}

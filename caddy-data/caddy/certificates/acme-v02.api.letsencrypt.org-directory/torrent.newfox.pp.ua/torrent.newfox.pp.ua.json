@@ -1,0 +1,8 @@
+{
+	"sans": [
+		"torrent.newfox.pp.ua"
+	],
+	"issuer_data": {
+		"url": "https://acme-v02.api.letsencrypt.org/acme/cert/037962a965eed9ce38c469d42a72d767adb7"
+	}
+}

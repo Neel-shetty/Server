@@ -1,0 +1,8 @@
+{
+	"sans": [
+		"jellyfin.newfox.pp.ua"
+	],
+	"issuer_data": {
+		"url": "https://acme-v02.api.letsencrypt.org/acme/cert/045d014f5c427f63b8217f1f581072452a6f"
+	}
+}

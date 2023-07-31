@@ -1,0 +1,8 @@
+{
+	"sans": [
+		"radarr.newfox.pp.ua"
+	],
+	"issuer_data": {
+		"url": "https://acme-v02.api.letsencrypt.org/acme/cert/0386eb8a15eda60fca5c211beab9c21d2f18"
+	}
+}

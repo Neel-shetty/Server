@@ -1,0 +1,14 @@
+{
+	"status": "valid",
+	"contact": [
+		"mailto:neelnarayanshetty@gmail.com"
+	],
+	"termsOfServiceAgreed": true,
+	"externalAccountBinding": {
+		"protected": "eyJhbGciOiJIUzI1NiIsImtpZCI6IjhTc1V6Rk9HSXd0dkZ1NFVZSGlYOHciLCJ1cmwiOiJodHRwczovL2FjbWUuemVyb3NzbC5jb20vdjIvRFY5MC9uZXdBY2NvdW50In0",
+		"payload": "eyJjcnYiOiJQLTI1NiIsImt0eSI6IkVDIiwieCI6Ims2TU1KbXNlc2cyUDZsN0RVRWxpWlVTRzlOZ3FyUHNpdUgyV096cldLZVkiLCJ5IjoiamFDQ2x0dU56eHhwZlhudW1wVzdzenpCY2hlbURZT0MtelpiYkR1UWlLOCJ9",
+		"signature": "-Ps39zttvI_yE2QDjVsoCnOb6g1SZzErTNG9eVrW01k"
+	},
+	"orders": "https://acme.zerossl.com/v2/DV90/account/8SsUzFOGIwtvFu4UYHiX8w/orders",
+	"location": "https://acme.zerossl.com/v2/DV90/account/8SsUzFOGIwtvFu4UYHiX8w"
+}

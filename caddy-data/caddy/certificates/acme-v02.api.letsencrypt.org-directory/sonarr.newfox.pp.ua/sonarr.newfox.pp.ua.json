@@ -1,0 +1,8 @@
+{
+	"sans": [
+		"sonarr.newfox.pp.ua"
+	],
+	"issuer_data": {
+		"url": "https://acme-v02.api.letsencrypt.org/acme/cert/03007ab72d0ad83ae04dec7bfe23fa3c6f41"
+	}
+}
